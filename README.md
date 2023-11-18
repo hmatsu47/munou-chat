@@ -45,3 +45,9 @@ PGVECTOR_DATABASE=postgres
 PGVECTOR_USER=postgres
 PGVECTOR_PASSWORD=【pgvectorコンテナ起動時に指定したパスワード】
 ```
+
+## 起動
+
+```sh:
+streamlit run app.py --server.port 8080
+```
