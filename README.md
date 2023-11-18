@@ -1,13 +1,13 @@
 # munou-chat
 
-## pip
+いにしえの人工無能（人工無脳）っぽいチャットを、あえて Embeddings と Vector store だけで再現してみました。
 
-```sh:
-pip install streamlit
-pip install boto3 langchain
-pip install pgvector psycopg2-binary
-pip install python-dotenv
-```
+- Embeddings : Amazon Bedrock の Titan Embeddings G1
+- Vector store : pgvector（PostgreSQL 15）
+
+## Bedrock モデル有効化
+
+![マネージドコンソール](enable_titan.png "マネージドコンソール")
 
 ## IAM Role（追加分）
 
@@ -24,15 +24,20 @@ pip install python-dotenv
 }
 ```
 
-## Bedrock モデル有効化
-
-![マネージドコンソール](enable_titan.png "マネージドコンソール")
-
 ## pgvector コンテナ起動
 
 ```sh:
 docker pull ankane/pgvector
 ocker run --net=host -e POSTGRES_PASSWORD='【パスワード】' ankane/pgvector
+```
+
+## pip
+
+```sh:
+pip install streamlit
+pip install boto3 langchain
+pip install pgvector psycopg2-binary
+pip install python-dotenv
 ```
 
 ## .env ファイル
