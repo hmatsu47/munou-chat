@@ -28,7 +28,7 @@
 
 ```sh:
 docker pull ankane/pgvector
-ocker run --net=host -e POSTGRES_PASSWORD='【パスワード】' ankane/pgvector
+docker run --net=host -e POSTGRES_PASSWORD='【パスワード】' ankane/pgvector
 ```
 
 ## pip
