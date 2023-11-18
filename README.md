@@ -42,6 +42,12 @@ pip install pgvector psycopg2-binary
 pip install python-dotenv
 ```
 
+または
+
+```sh:
+pip install -r requirements.txt
+```
+
 ## .env ファイル
 
 ```text:
