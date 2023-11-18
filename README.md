@@ -2,8 +2,8 @@
 
 いにしえの人工無能（人工無脳）っぽいチャットを、あえて Embeddings と Vector store だけで再現してみました。
 
-- Embeddings : Amazon Bedrock の Titan Embeddings G1
-- Vector store : pgvector（PostgreSQL 15）
+- Embeddings : Amazon Bedrock の Titan Embeddings G1 - Text
+- Vector store : pgvector 0.5.1（PostgreSQL 15）
 
 ## Bedrock モデル有効化
 
