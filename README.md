@@ -27,3 +27,21 @@ pip install python-dotenv
 ## Bedrock モデル有効化
 
 ![マネージドコンソール](enable_titan.png "マネージドコンソール")
+
+## pgvector コンテナ起動
+
+```sh:
+docker pull ankane/pgvector
+ocker run --net=host -e POSTGRES_PASSWORD='【パスワード】' ankane/pgvector
+```
+
+## .env ファイル
+
+```text:
+PGVECTOR_DRIVER=psycopg2
+PGVECTOR_HOST=localhost
+PGVECTOR_PORT=5432
+PGVECTOR_DATABASE=postgres
+PGVECTOR_USER=postgres
+PGVECTOR_PASSWORD=【pgvectorコンテナ起動時に指定したパスワード】
+```
