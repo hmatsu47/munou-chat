@@ -5,6 +5,8 @@
 - Embeddings : Amazon Bedrock の Titan Embeddings G1 - Text
 - Vector store : pgvector 0.5.1（PostgreSQL 15）
 
+※ Cloud9 で実行
+
 ## Bedrock モデル有効化
 
 ![マネージドコンソール](enable_titan.png "マネージドコンソール")
