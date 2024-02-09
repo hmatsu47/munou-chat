@@ -2,7 +2,7 @@ import os
 import boto3
 import streamlit as st
 from dotenv import load_dotenv
-from langchain.embeddings import BedrockEmbeddings
+from langchain_community.embeddings import BedrockEmbeddings
 from langchain.docstore.document import Document
 from langchain.vectorstores.pgvector import PGVector
 
