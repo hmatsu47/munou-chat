@@ -37,7 +37,7 @@ docker run --net=host -e POSTGRES_PASSWORD='【パスワード】' ankane/pgvect
 
 ```sh:
 pip install streamlit
-pip install boto3 langchain
+pip install boto3 langchain langchain-community
 pip install pgvector psycopg2-binary
 pip install python-dotenv
 ```
